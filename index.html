@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kornkamon Mathuros - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Kornkamon Mathuros
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          gib.mathuros@gmail.com
+        </div>
+        <div style="clear:both; size:12"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +668-6364-3022
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Gib (Kornkamon)! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Experienced data scientist with 1.5 years in data-driven problem-solving and 8 months as a software engineer.
+            Passionate about applied machine learning, specializing in leveraging algorithms to tackle real-world challenges.
+            Dedicated to innovating at the intersection of data science and software engineering, aiming to deliver impactful solutions across diverse domains.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/ai.jpg"/>
+          <h6>AI & Machine Learning</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/python.jpg"/>
+            <h6>Python</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/spark.jpg"/>
+            <h6>Big data</h6>
+            <p>2 years experience</p>
+          </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/dotnet.jfif"/>
+          <h6>.NET and C#</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/rest.png"/>
+            <h6>Rest API</h6>
+            <p>1 years experience</p>
+          </div>  
+
+
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Churn prediction</h3>
+            <ul>
+              <li>
+                This project aims to develop a customer churn prediction model for the retail industry using XGBoost, targeting a precision of around 75%. The model will leverage historical customer data to forecast potential churn, enabling proactive retention strategies and enhancing overall customer retention efforts.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Insight Analyzer</h3>
+            <ul>
+              <li>This project focuses on applying a Generative AI system to automate the analysis and generation of insightful findings from complex datasets. By harnessing advanced machine learning techniques, the system aims to autonomously derive actionable insights, revolutionizing decision-making processes across various domains.
+            </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Anomaly detection in Water treatment plant</h3>
+            <ul>
+              <li>
+                This project aims to deploy a time series deep learning model for detecting anomalies in water treatment systems, leveraging sensor data to ensure early identification of operational deviations and maintain water quality standards effectively. The system will provide real-time alerts and insights to facilitate prompt maintenance actions, optimizing system reliability and minimizing downtime.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Demonstrates exceptional proficiency in data analysis and software engineering, with a keen ability to innovate and solve complex problems effectively.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Exhibits strong analytical prowess and a deep understanding of applied machine learning, consistently delivering impactful solutions across diverse projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Combines expertise in data science and software engineering with a passion for innovation, consistently achieving high standards of performance and driving impactful results.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation(); showPopup(true);">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
